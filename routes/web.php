@@ -19,3 +19,6 @@ Route::get('/', function () {
 Route::get('/about-us', function () {
     return view('layouts.app');
 });
+Route::get('/collections', function () {
+    return view('layouts.collection');
+});
