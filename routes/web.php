@@ -13,12 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
 Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('/about-us', function () {
     return view('layouts.app');
 });
 Route::get('/collections', function () {
     return view('layouts.collection');
+});
+Route::get('/single-blog', function () {
+    return view('layouts.single-blog');
 });
